@@ -50,6 +50,11 @@ This is counting the number of misplaced tiles, meaning each tile is considered,
 
 Is the sum of the distances of the tiles from their goal positions. Because tiles cannot move along diagonals, the distance we will count is the sum of the horizontal and vertical distances. The main idea is that in a grid-like city like Manhattan, you can only move orthogonal distances. Take the sums of all of those for each time in the entire configuration and you’ve got yourself the Manhattan Distance cost total.
 
+The single configuration below would have a total of:
+    * = (#1 = 1) + (#3 =  3)    + (#5 =  1)    + (#6 =  1)    + (#7 =  4)    + (#8 =  3)
+    * =       1  +        3     +        1     +        1     +        4     +        3
+    * = 14
+
 ![Manhattan Distance](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_manhattan_distance.png)
 
 #### Gaschnig’s Swaps
