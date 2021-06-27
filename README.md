@@ -30,6 +30,36 @@ A-Star search examines all values available in all leafs of the tree and selects
 * H(n)
     * The heurustic value (read below for more)
 
+### Heuristic
+
+This is a fancy way of labeling the method of placing a value of one configuration from the goal state to another. Heuristics give values to the configuration of the nodes. The A-Star search then uses this value to determine which node configuration to prioritize over others.
+
+Though there are many heuristics out there, these are the three I chose for this project:
+* Misplaced Tiles
+* Manhattan Distance
+* Gaschnig’s Swaps
+
+#### Misplaced Tiles
+This is counting the number of misplaced tiles, meaning each tile is considered, if that tile is not in the same position as the goal state position, then you count it. Add the count together for each tile and add that to the total. That’s the Misplaced Tiles cost.
+
+![Misplaced Tiles](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_misplaced.png)
+
+#### Manhattan Distance
+
+Is the sum of the distances of the tiles from their goal positions. Because tiles cannot move along diagonals, the distance we will count is the sum of the horizontal and vertical distances. The main idea is that in a grid-like city like Manhattan, you can only move orthogonal distances. Take the sums of all of those for each time in the entire configuration and you’ve got yourself the Manhattan Distance cost total.
+
+![Manhattan Distance](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_manhattan_distance.png)
+
+#### Gaschnig’s Swaps
+This is an iterative approach to finding the heuristics above. How this works is that we consider the problem of the 8 puzzle a relaxed problem first, then we iteratively swap the tiles in the placements they need. This unfortunately turns out to be a more computationally expensive Misplaced Tiles heuristic. The value is always the same.
+
+![Gashnigs Swaps](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_gashnigs.png)
+
+These are the steps:
+* We start with the blank space and find which location it’s in. Locate that tile and swap it with the blank.
+* Increment a counter by one.
+* Do that again until all tiles have been in their right place.
+ 
 ## Resulting Data
 
 ### Best-First Search
