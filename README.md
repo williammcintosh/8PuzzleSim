@@ -30,6 +30,8 @@ A-Star search examines all values available in all leafs of the tree and selects
 * H(n)
     * The heurustic value (read below for more)
 
+![Values Explained](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_values_explained.png)
+
 ### Heuristic
 
 This is a fancy way of labeling the method of placing a value of one configuration from the goal state to another. Heuristics give values to the configuration of the nodes. The A-Star search then uses this value to determine which node configuration to prioritize over others.
