@@ -20,6 +20,10 @@ You can hold the spacebar to move quickly. Press 'q' (without shift) to zoom in,
 
 ![Find the answer](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_move_around.gif)
 
+Works on mobile, too!
+
+![Mobile](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/mobile_movement.gif)
+
 ## Explaining the Logic
 
 ### A-Star Search
