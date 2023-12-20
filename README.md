@@ -1,28 +1,10 @@
 # 8PuzzleSim
 
-## Running the Simulator
+## Purpose
 
-### Drag and Drop Tiles
+This task was profound for me because it fundamentally shifted my concepts of problem solving in the computer science space. This assignmen was issued by our professor [Dr. Anthony Rhodes](https://www.researchgate.net/profile/Anthony-Rhodes-5) with little explanation leaving am ambigious solution. After thorough brute-force, algorithm-only attempts I found that my nested switch statements were too cumbersome to maintain. With his help he guided me towards graph searching.
 
-Click and hold to drag and drop the tiles in the placements that you desire. The puzzle will warn you if your placement isn't solvable.
-
-![Drag and drop](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_start_loading_gif.gif)
-
-### Choose Desired Settings
-
-Click and hold to drag and drop the tiles in the palcement you desire and select the desired settings.
-
-![Select settings](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_shift_around.gif)
-
-### Press Start and Look Around
-
-You can hold the spacebar to move quickly. Press 'q' (without shift) to zoom in, press 'a' (without shift) to zoom out. Press the arrows to move around.
-
-![Find the answer](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_move_around.gif)
-
-Works on mobile, too!
-
-![Mobile](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/mobile_movement.gif)
+Writing out this solver from scratch gave me a deep intuition of graph search alrogithms but more importantly caused me to pause and reconsider the problem from multiple angles.
 
 ## Explaining the Logic
 
@@ -164,3 +146,27 @@ Average Time: 0.1178, Average Nodes: 9
     * Run Time: 1.439, Nodes Visited: 32
 
 Average Time: 0.4708, Nodes Visited: 13.4
+
+## Running the Simulator
+
+### Drag and Drop Tiles
+
+Click and hold to drag and drop the tiles in the placements that you desire. The puzzle will warn you if your placement isn't solvable.
+
+![Drag and drop](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_start_loading_gif.gif)
+
+### Choose Desired Settings
+
+Click and hold to drag and drop the tiles in the palcement you desire and select the desired settings.
+
+![Select settings](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_shift_around.gif)
+
+### Press Start and Look Around
+
+You can hold the spacebar to move quickly. Press 'q' (without shift) to zoom in, press 'a' (without shift) to zoom out. Press the arrows to move around.
+
+![Find the answer](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/8piece_move_around.gif)
+
+Works on mobile, too!
+
+![Mobile](https://github.com/williammcintosh/8PuzzleSim/blob/main/images/mobile_movement.gif)
